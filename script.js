@@ -13,15 +13,15 @@ function validate() {
 }
   btn2.addEventListener('click', validate);
 
-function myFunction() {
-  document.getElementById("password").style.display = "none";
-}
-  btn.addEventListener("click", myFunction);
+// function myFunction() {
+//   document.getElementById("password").style.display = "none";
+// }
+//   btn.addEventListener("click", myFunction);
 
-function myFunction1() {
-  document.getElementById("password").style.display = "block";
-}
-  btn1.addEventListener("click", myFunction1);
+// function myFunction1() {
+//   document.getElementById("password").style.display = "block";
+// }
+//   btn1.addEventListener("click", myFunction1);
 
 function checkNip() {
   nip.value;
@@ -59,3 +59,4 @@ function clearInputs() {
       document.getElementById('form').reset();
     }
   btn3.addEventListener('click', clearInputs);
+

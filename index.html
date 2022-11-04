@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <head>
   <title>Formularz</title>
 </head>
 
 <body>
-
-  <input type="checkbox" id="btn">Delete</input><br><br>
-  <input type="checkbox" id="btn1">Recover</input><br><br>
-
+  <div class="container">
+    <input type="checkbox" id="btn">Delete</input><br><br>
+    <input type="checkbox" id="btn1">Recover</input><br><br>
+  </div>
   <form id="form">
     <input type="text" id="nip" /><br><br>
     <div id="password">
@@ -21,7 +23,18 @@
   <input type="button" value="Wyczyść" id="btn3" />
   <p id="nip_res"></p>
   <p id="pass_check"></p>
-
+  <script>
+    $(document).ready(function () {
+      $("#btn").click(function () {
+        $("#pass").hide(1000);
+        $('#pass_conf').hide(1200);
+      });
+      $("#btn1").click(function () {
+        $("#pass").show(1000);
+        $('#pass_conf').show(1200);
+      });
+    });
+  </script>
   <script src="script.js"></script>
 
 </body>
